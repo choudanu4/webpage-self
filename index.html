@@ -8,18 +8,26 @@
     <link rel="import" href="bower_components/paper-button/paper-button.html">
     <link rel="import" href="bower_components/theme/everest.html">
   </head>
-  <body>
-    <name-tag></name-tag>
-    <p style="color: green">Hi! I've just started this webpage, and I'll be working on improving on it later.</p>
-    <div id="Greeting! "></div>
+  <body class="veritcal">
+    <button on-click="{{toggle}}">toggle collapse</button>
     
-    <paper-material elevation="1">
-      <paper-input label="Your Name? "></paper-input>
-      <paper-button>Say Hello!</paper-button>
-    </paper-material>
+    <iron-collapse id="collapse">
+      <div>
+        <paper-material>
+          <paper-input label="Input Label"></paper-input>
+        </paper-material>
+      </div>
+    </iron-collapse>
 
+      
+
+    
 
     <script>
+        toggle: fuction() {
+          this.$.collapse.toggle();
+      }
+      
       // To ensure that elements are ready on polyfilled browsers, 
       // wait for WebComponentsReady. 
       document.addEventListener('WebComponentsReady', function() {
