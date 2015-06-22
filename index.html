@@ -6,21 +6,25 @@
     <link rel="import" href="bower_components/paper-material/paper-material.html">
     <link rel="import" href="bower_components/paper-input/paper-input.html">
     <link rel="import" href="bower_components/paper-button/paper-button.html">
+    <link rel="import" href="bower_components/iron-collapse/iron-collapse.html">
     <link rel="import" href="bower_components/theme/everest.html">
   </head>
   <body class="veritcal">
     <style>
       .collapse-content {
-        padding 15px;
+        padding: 15px;
         border: 1px solid #dedede;
+        border-top: none;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
       }
     </style>
     
     
     
-    <button on-click="{{toggle}}">toggle collapse</button>
+    <button on-click="document.querySelector('#collapse1').toggle();">toggle collapse</button>
     
-    <iron-collapse id="collapse">
+    <iron-collapse id="collapse1">
       <div class="collapse-content">
         <paper-material>
           <paper-input label="Input Label"></paper-input>
