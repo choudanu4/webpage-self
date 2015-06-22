@@ -9,10 +9,19 @@
     <link rel="import" href="bower_components/theme/everest.html">
   </head>
   <body class="veritcal">
+    <style>
+      .collapse-content {
+        padding 15px;
+        border: 1px solid #dedede;
+      }
+    </style>
+    
+    
+    
     <button on-click="{{toggle}}">toggle collapse</button>
     
     <iron-collapse id="collapse">
-      <div>
+      <div class="collapse-content">
         <paper-material>
           <paper-input label="Input Label"></paper-input>
         </paper-material>
