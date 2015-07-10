@@ -1,14 +1,26 @@
-<!DOCTYPE html>
+
+<!doctype html>
+<!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
 <html>
   <head>
-    <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
-    <link rel="import" href="name-tag.html">
-    <link rel="import" href="bower_components/paper-material/paper-material.html">
-    <link rel="import" href="bower_components/paper-input/paper-input.html">
-    <link rel="import" href="bower_components/paper-button/paper-button.html">
-    <link rel="import" href="bower_components/iron-collapse/iron-collapse.html">
-  </head>
-  <body>
+
+    <title>iron-collapse demo</title>
+
+    <meta charset="utf-8">
+    
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="bower_components/iron-collapse.html">
+    <link rel="stylesheet" href="../../paper-styles/demo.css">
+
     <style>
       .heading {
         padding: 10px 15px;
@@ -23,47 +35,58 @@
         width: 100%;
         text-align: left;
       }
-      
-      .collapse-content {
+
+      .content {
         padding: 15px;
         border: 1px solid #dedede;
         border-top: none;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
       }
+
     </style>
-    
-    
-    
-    <button class="heading" on-click="document.querySelector('#collapse1').toggle();">toggle collapse</button>
-    
+
+  </head>
+  <body unresolved>
+
+    <button class="heading" onclick="document.querySelector('#collapse1').toggle();">Collapse #1</button>
     <iron-collapse id="collapse1">
-      <div>
-        <paper-material>
-          <paper-input label="Input Label"></paper-input>
-        </paper-material>
+      <div class="content">
+        <div>Lorem ipsum dolor sit amet, per in nusquam nominavi periculis, sit elit oportere ea, id minim maiestatis incorrupte duo. Dolorum verterem ad ius, his et nullam verterem. Eu alia debet usu, an doming tritani est. Vix ad ponderum petentium suavitate, eum eu tempor populo, graece sententiae constituam vim ex. Cu torquatos reprimique neglegentur nec, voluptua periculis has ut, at eos discere deleniti sensibus. Lorem ipsum dolor sit amet, per in nusquam nominavi periculis, sit elit oportere ea, id minim maiestatis incorrupte duo. Dolorum verterem ad ius, his et nullam verterem. Eu alia debet usu, an doming tritani est. Vix ad ponderum petentium suavitate, eum eu tempor populo, graece sententiae constituam vim ex. Cu torquatos reprimique neglegentur nec, voluptua periculis has ut, at eos discere deleniti sensibus.</div>
       </div>
     </iron-collapse>
-    
-    <paper-input label="Your name? "></paper-input>
-      
 
-    <script>
-        toggle: fuction() {
-          this.$.collapse.toggle();
-      }
-      
-      // To ensure that elements are ready on polyfilled browsers, 
-      // wait for WebComponentsReady. 
-      document.addEventListener('WebComponentsReady', function() {
-        var input = document.querySelector('paper-input');
-        var button = document.querySelector('paper-button');
-        var greeting = document.getElementById("greeting");
-        button.addEventListener('click', function() {
-          greeting.textContent = 'Hello, ' + input.value;
-        });
-      });
-    </script>
-    
+    <button class="heading" onclick="document.querySelector('#collapse2').toggle();">Collapse #2</button>
+    <iron-collapse id="collapse2">
+      <div class="content">
+        <div>Pro saepe pertinax ei, ad pri animal labores suscipiantur. Modus commodo minimum eum te, vero utinam assueverit per eu, zril oportere suscipiantur pri te. Partem percipitur deterruisset ad sea, at eam suas luptatum dissentiunt. No error alienum pro, erant senserit ex mei, pri semper alterum no. Ut habemus menandri vulputate mea. Feugiat verterem ut sed. Dolores maiestatis id per. Pro saepe pertinax ei, ad pri animal labores suscipiantur. Modus commodo minimum eum te, vero utinam assueverit per eu, zril oportere suscipiantur pri te. Partem percipitur deterruisset ad sea, at eam suas luptatum dissentiunt. No error alienum pro, erant senserit ex mei, pri semper alterum no. Ut habemus menandri vulputate mea. Feugiat verterem ut sed. Dolores maiestatis id per.</div>
+
+        <button class="heading" onclick="document.querySelector('#collapse3').toggle();">Collapse #3</button>
+        <iron-collapse id="collapse3">
+          <div class="content">
+            <div>Iisque perfecto dissentiet cum et, sit ut quot mandamus, ut vim tibique splendide instructior. Id nam odio natum malorum, tibique copiosae expetenda mel ea. Mea melius malorum ut. Ut nec tollit vocent timeam. Facer nonumy numquam id his, munere salutatus consequuntur eum et, eum cotidieque definitionem signiferumque id. Ei oblique graecis patrioque vis, et probatus dignissim inciderint vel. Sed id paulo erroribus, autem semper accusamus in mel. Iisque perfecto dissentiet cum et, sit ut quot mandamus, ut vim tibique splendide instructior. Id nam odio natum malorum, tibique copiosae expetenda mel ea. Mea melius malorum ut. Ut nec tollit vocent timeam. Facer nonumy numquam id his, munere salutatus consequuntur eum et, eum cotidieque definitionem signiferumque id. Ei oblique graecis patrioque vis, et probatus dignissim inciderint vel. Sed id paulo erroribus, autem semper accusamus in mel.</div>
+          </div>
+        </iron-collapse>
+      </div>
+    </iron-collapse>
+
   </body>
 </html>
+
+myMulktiplierFunct(attacker_stat, attackee_stat) {
+  attacker =[20,"water", "sword"]
+  attackee= [10, "air", "shield"]
+  stats = ["water", "air", "fire", "earth"]
+  stats_container = [water_stats, air_stats, fire_stats, earth_stats]
+  water_stats = [1,1,0.5,2]
+  air_stats = [1,1,2,0.5]
+  fire_stats = []
+  earth_stats = []
+
+
+  multiplier = air_stats[stats.indexOf(attacker[1])]
+
+  new_multiplier = stats_container[stats.indexOf(attackee[1])][stats.indexOf(attacker[1])]
+  return new_multiplier
+
+}
