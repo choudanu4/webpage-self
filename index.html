@@ -73,20 +73,3 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   </body>
 </html>
 
-myMulktiplierFunct(attacker_stat, attackee_stat) {
-  attacker =[20,"water", "sword"]
-  attackee= [10, "air", "shield"]
-  stats = ["water", "air", "fire", "earth"]
-  stats_container = [water_stats, air_stats, fire_stats, earth_stats]
-  water_stats = [1,1,0.5,2]
-  air_stats = [1,1,2,0.5]
-  fire_stats = []
-  earth_stats = []
-
-
-  multiplier = air_stats[stats.indexOf(attacker[1])]
-
-  new_multiplier = stats_container[stats.indexOf(attackee[1])][stats.indexOf(attacker[1])]
-  return new_multiplier
-
-}
