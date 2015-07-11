@@ -34,6 +34,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   </head>
   <body unresolved>
+    <style>
+      .content{
+        width: 855px;
+        margin:0 auto;
+      }
+    </style>
     <template is="dom-bind">
       <paper-header-panel mode="waterfall-tall">
         <paper-toolbar>
@@ -49,9 +55,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
         </paper-toolbar>
 
-        <div>
-
-        </div>
+        <div>Anurag Choudhury</div>
       </paper-header-panel>
 
       <div>
@@ -62,7 +66,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               <paper-button>Hello!</paper-button>          
             </paper-material>
           </div>
-          <div>Page 2</div>
+          <div class="flex">
+            <div></div>
+            <div id="content"></div>
+            <div></div>
+          </div>
         </iron-pages>        
       </div>
 
