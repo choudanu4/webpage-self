@@ -37,7 +37,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <paper-header-panel mode="waterfall-tall">
       <paper-toolbar>
 
-        <paper-tabs selected="{{tab_selected}}" class="bottom self-end" style="width: 300px;">
+        <paper-tabs selected="{{selected}}" class="bottom self-end" style="width: 300px;">
 
           <paper-tab>PROJECTS</paper-tab>
           <paper-tab>ABOUT ME</paper-tab>
@@ -54,7 +54,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     </paper-header-panel>
     
     <div>
-      <iron-pages selected="{{tab_selected}}">
+      <h2>Current Tab: <span>[[selected]]</span></h2>
+      <iron-pages selected="{{selected}}">
         <div>
           <paper-material elevation="1">
             <paper-button>Hello!</paper-button>          
